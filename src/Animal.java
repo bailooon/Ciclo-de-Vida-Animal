@@ -17,9 +17,7 @@ public class Animal {
     }
 
     public String informacoes(){
-        return "Nome: " + nome + ", Classe: " + classe + ", Família: " + familia +
-                           ", Idade: " + idade + ", Estado: " + estado + ", Caloria: " + caloria +
-                           ", Força: " + forca;
+        return "Nome: " + nome + ", Classe: " + classe + ", Família: " + familia + ", Idade: " + idade + ", Estado: " + estado + ", Caloria: " + caloria + ", Força: " + forca;
     }
 
     public void nascer(){
