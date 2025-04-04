@@ -2,18 +2,24 @@
 import java.util.Scanner;
 
 public class Animal {
-    String nome;
-    String classe;
-    String familia;
-    int forca=0;
-    int caloria=0;
-    int idade=0;
-    boolean estado;
+    private String nome;
+    private String classe;
+    private String familia;
+    private int forca=0;
+    private int caloria=0;
+    private int idade=0;
+    private boolean estado;
 
     Scanner entrada = new Scanner(System.in);
 
 
     public Animal() {
+    }
+
+    public String informacoes(){
+        return "Nome: " + nome + ", Classe: " + classe + ", Família: " + familia +
+                           ", Idade: " + idade + ", Estado: " + estado + ", Caloria: " + caloria +
+                           ", Força: " + forca;
     }
 
     public void nascer(){
