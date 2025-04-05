@@ -2,6 +2,7 @@
 import java.util.Scanner;
 
 public class Animal {
+    private int id;
     private String nome;
     private String classe;
     private String familia;
@@ -61,6 +62,14 @@ public class Animal {
     }
     
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public String getNome() {
         return nome;
     }
@@ -91,12 +100,12 @@ public class Animal {
     }
 
 
-    public int getForça() {
+    public int getForca() {
         return forca;
     }
 
 
-    public void setForça(int força) {
+    public void setForca(int força) {
         this.forca = força;
     }
 
