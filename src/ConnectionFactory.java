@@ -10,6 +10,7 @@ public class ConnectionFactory {
 	// Configurações de conexão com o banco de dados Oracle
 	private static final String URL = "jdbc:oracle:thin:@oracle.fiap.com.br:1521:ORCL";
 	private static final String DRIVER = "oracle.jdbc.driver.OracleDriver";
+	//LEMBRE DE SEMPRE PREENCHER O USUÁRIO E SENHA ANTES DE RODAR O PROGRAMA
 	private static String USERNAME = "";
 	private static String PASSWORD = "";
 

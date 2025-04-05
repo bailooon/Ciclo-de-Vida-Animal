@@ -7,9 +7,15 @@ public class Main {
         Scanner entrada = new Scanner(System.in);
         Animal animal = new Animal();
         AnimalDAO animalDAO = new AnimalDAO();
-        animal.setNome("elefante");
-        animal.setClasse("idiota");
-        animal.setFamilia("cu");
+        System.out.println("Digite o nome do animal:");
+        String nome = entrada.next();
+        animal.setNome(nome);
+        System.out.println("Digite a classe do animal:");
+        String classe = entrada.next();
+        animal.setClasse(classe);
+        System.out.println("Digite a família do animal:");
+        String familia = entrada.next();
+        animal.setFamilia(familia);
 
         animalDAO.nascer(animal);
 
@@ -49,6 +55,7 @@ public class Main {
         //             break;
         //     }
         // }
+        entrada.close();
     }
 
 

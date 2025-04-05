@@ -1,34 +1,41 @@
+
 import java.sql.SQLException;
 
-public class AnimalDAO extends DAO{
+public class AnimalDAO extends DAO {
 
     public AnimalDAO() {
         connection = ConnectionFactory.getInstance().getConnection();
     }
 
-    public void nascer(Animal animal){
+    public void nascer(Animal animal) {
+        int idAnimal = 0;
+
         try {
             connection.setAutoCommit(false);
-        sql = "insert into animais values(?, ?, ?, ?, ?, ?, ?, ?)";
-        ps = connection.prepareStatement(sql);
-        ps.setInt(1, 02);
-        ps.setString(2, animal.getNome());
-        ps.setString(3, animal.getClasse());
-        ps.setString(4, animal.getFamilia());
-        ps.setInt(5, 10);
-        ps.setInt(6, 10);
-        ps.setInt(7, 0);
-        ps.setBoolean(8, true);
-        ps.execute();
+            sql = "select max(id) as maior from animais";
+            ps = connection.prepareStatement(sql);
+            rs = ps.executeQuery();
+            if (rs.next()) {
+                idAnimal = rs.getInt("maior");
+            }
 
-        connection.commit();
-            
+            sql = "insert into animais values(?, ?, ?, ?, ?, ?, ?, ?)";
+            ps = connection.prepareStatement(sql);
+            ps.setInt(1, idAnimal == 0 ? 1 : idAnimal + 1);
+            ps.setString(2, animal.getNome());
+            ps.setString(3, animal.getClasse());
+            ps.setString(4, animal.getFamilia());
+            ps.setInt(5, 10);
+            ps.setInt(6, 10);
+            ps.setInt(7, 0);
+            ps.setBoolean(8, true);
+            ps.execute();
+
+            connection.commit();
+
         } catch (SQLException e) {
             System.out.println("erro ao cadastrar animal\n" + e);
         }
     }
-        
 
 }
-
-    
