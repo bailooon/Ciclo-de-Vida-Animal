@@ -1,18 +1,7 @@
-## Getting Started
+## Ciclo de Vida Animal
+# Sobre o Projeto
+Esse projeto segue uma lógica de atividades, desde o nascimento do animal, todas as atividades durante a sua vida, com niveis de força, calorias e idade, até a sua morte.
+O Projeto tem planos de evolução, iniciando com a integração com um Banco de Dados Oracle, até a criação de uma interface mais intuitiva e interativa.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+# Linguagens Utilizadas
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
