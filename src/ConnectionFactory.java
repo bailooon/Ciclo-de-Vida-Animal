@@ -11,8 +11,8 @@ public class ConnectionFactory {
 	private static final String URL = "jdbc:oracle:thin:@oracle.fiap.com.br:1521:ORCL";
 	private static final String DRIVER = "oracle.jdbc.driver.OracleDriver";
 	//LEMBRE DE SEMPRE PREENCHER O USUÁRIO E SENHA ANTES DE RODAR O PROGRAMA
-	private static String USERNAME = "rm98656";
-	private static String PASSWORD = "fiap24";
+	private static String USERNAME = "";
+	private static String PASSWORD = "";
 
 	// Construtor privado para impedir a criação de múltiplas instâncias
 	private ConnectionFactory() {}

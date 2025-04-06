@@ -25,10 +25,9 @@ public class Main {
                 case 2:
                 animalDAO.morrer(animal);
                 break;
-                // case 3:
-                // animal.comer();
-                // System.out.println(animal.informacoes());
-                // break;
+                case 3:
+                animalDAO.comer(animal);
+                break;
                 // case 4:
                 // animal.correr();
                 // System.out.println(animal.informacoes());
